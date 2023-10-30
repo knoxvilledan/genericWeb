@@ -1,4 +1,16 @@
-const btn = document.getElementById('colorChangeBtn');
+
+
+
+
+
+
+
+
+
+
+
+
+/* const btn = document.getElementById('colorChangeBtn');
 
 // Add a click event listener to the button
 btn.addEventListener('click', function() {
@@ -8,3 +20,4 @@ btn.addEventListener('click', function() {
     // Change the background color of the body to the random color
     document.body.style.backgroundColor = randomColor;
 });
+*/
