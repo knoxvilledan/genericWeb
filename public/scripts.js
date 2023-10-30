@@ -25,6 +25,29 @@ let result = myName + sum
     console.log(typeof result);
 
 
+if (num1 > num2){
+    console.log("'num1' is greater")
+    }   else {
+        console.log("'num2' is greater")
+    }
+
+    // need to insert the switch statement 
+
+function greet(name){
+    console.log(`Hello, ${name}!`);
+}
+
+function multiply(num1 , num2){
+    return num1 * num2;
+}
+
+const thisresult = multiply(num1, num2);
+    console.log(thisresult);
+
+    //Ask chat GPT for critiques on this tomorrow.It's 12:45 AM and I gotta go to bed.
+
+//Also each day I intend on starting the journey over.So that way I continuously build a new project here and see if that works. Goodnight world
+
 
 
 
