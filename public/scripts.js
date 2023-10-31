@@ -9,7 +9,7 @@ let isLearning = false
 let sum = num1 + num2;
 let difference = num2 - num1;   
 let product = num1 * num2;
-let nameAndSum = myName + ' ' + sum;
+let nameAndSum = `${myName} ${sum}`;
 // Logging
 console.log("Differnce:", difference);
 console.log("Product:", product);
@@ -41,20 +41,19 @@ switch (day) {
         console.log("Work Smarter");
         break;
 }
-
+//changed this greet function
 function greet(myName){
     console.log(`Hello, ${myName}!`);
 }
-
-greet(`${myName}`);
-
-function multiply(num1, num2){
-   let answer = num1 * num2
-   console.log(answer);
+// Changed this greet call
+greet(myName);
+// Changed this multiply function
+function multiply(a, b){
+   return a * b;
    
 }
-
-multiply(num1, num2);
+// Changed this call
+console.log(multiply(num1, num2));
 
 function factorial(n){
     if (n === 0){
@@ -63,10 +62,11 @@ function factorial(n){
         return n * factorial(n -1);
     }
 }
-console.log(factorial(6));
+console.log(factorial(5));
 // Totally got help from chatgpt on this factorial. 
 // Now I'm going to Drop a commit and then I'm going to see how I could have done this better.Section.
-
+// This commit is what I got for optimization.
+// This line was my pause point to do the above review.
 
 
 
