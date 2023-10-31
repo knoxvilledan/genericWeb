@@ -66,11 +66,16 @@ console.log(factorial(5));
 // Totally got help from chatgpt on this factorial. 
 // Now I'm going to Drop a commit and then I'm going to see how I could have done this better.Section.
 // This commit is what I got for optimization.
-// This line was my pause point to do the above review.
+// This line was my pause point to do the above review. 
+// Time to code more. part 3. still on day 2
 
+let fruits = ["apple", "banana", "cherry"];
+fruits.push("date", "elderberry");
+fruits.shift(0);
+console.log(fruits[1]);
 
-
-
-
+for (let i = 0; i < fruits.length; i++){
+    console.log(fruits[i]); 
+}
 
 
