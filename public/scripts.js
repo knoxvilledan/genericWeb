@@ -62,5 +62,25 @@ function factorial(n){
 }
 
 console.log(factorial(5));
-// pausing for optimization check
+// pausing for optimization check 340-500
 
+let fruits = ["apple", "banana", "cherry"];
+fruits.push("date", "elderberry");
+fruits.shift();
+
+let index = fruits.indexOf("cherry");
+console.log("Index of cherry:", index);
+
+for (let i = 0; i < fruits.length; i++){
+    let reverseIndex = fruits.length - 1 - i;
+    console.log("Fruit at index", i, ":", fruits[i]);
+    console.log("----");
+    console.log("Fruit at reverse index", reverseIndex, ":", fruits[reverseIndex]);
+    
+}
+let i = 10 
+while (i > 0){
+    console.log(i--); 
+}
+/* Mostly figured this one out on my own. gonna try another way.
+gonna commit so I can compare.*/
