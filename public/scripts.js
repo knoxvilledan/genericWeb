@@ -1,1 +1,2 @@
-// The cock begins again.
+// The clock begins again. 
+// wait!! lol. that was a typo. 
