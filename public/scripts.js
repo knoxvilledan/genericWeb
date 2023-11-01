@@ -57,9 +57,7 @@ function factorial(n){
     return n === 0 ? 1 : n * factorial(n -1);
     }
 
-
 console.log(factorial(5));
-// pausing for optimization check 340-500
 
 let fruits = ["apple", "banana", "cherry"];
 fruits.push("date", "elderberry");
@@ -80,8 +78,6 @@ let i = sum
 while (i > 0){
     console.log(i--); 
 }
-/* Mostly figured this one out on my own. gonna try another way.
-gonna commit so I can compare. Got it*/
 
 let Numbers = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 Numbers.shift();
@@ -93,4 +89,29 @@ for (let i = 0; i < Numbers.length; i++){
 }
 console.log("This is the sum", totals);
 // Boy that was brutal.
-// Pause to optimize  1053-
+// Pause to optimize  1053-1059
+
+// 1st Object
+let person = {
+    firstName: `${myName}`,
+    lastName: "Nelson",
+    age:`${age}`,
+    jobTitle: "Web Developer"
+};
+
+// 1st Method
+person.fullName = function(){
+    return `${this.firstName} ${this.lastName}`;
+};
+
+console.log(person.fullName());
+
+// Adding another Method
+person.birthday = function(){
+    this.age += 1;
+    console.log(`Happy Birthday! ${this.firstName} is now ${this.age} years old.`);
+}
+person.birthday();
+
+// This block of code is not right. Need to fix 471 yrs old. 1130 p and I'm calling it for today. 13 hours in this chair. Many many productive hours.
+
