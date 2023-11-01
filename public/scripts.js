@@ -54,12 +54,9 @@ function multiply(a, b){
 console.log(multiply(num1, num2));
 
 function factorial(n){
-    if (n === 0){
-        return 1;
-    } else {
-        return n * factorial(n -1);
+    return n === 0 ? 1 : n * factorial(n -1);
     }
-}
+
 
 console.log(factorial(5));
 // pausing for optimization check 340-500
@@ -96,3 +93,4 @@ for (let i = 0; i < Numbers.length; i++){
 }
 console.log("This is the sum", totals);
 // Boy that was brutal.
+// Pause to optimize  1053-
