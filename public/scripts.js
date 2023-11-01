@@ -3,7 +3,7 @@
 let myName = "Daniel";
 let num1 = 10;
 let num2 = 20;
-let isLearning = true
+let isLearning = true;
 let sum = num1 + num2;
 let difference = num2 - num1;
 let product = num1 * num2;
@@ -25,7 +25,7 @@ if (num1 > num2){
         console.log("'num2' is greater");
     }
 
-let day = "Sunday"
+let day = "Sunday";
 switch (day){
     case "Monday":
         console.log("Start of the week!");
@@ -40,21 +40,19 @@ switch (day){
         console.log("Work smarter!");
         break;
 }   
-
+//optimized function
 function greet(){
-    let greet = (`Hello`);
-    console.log(greet, myName);
+    let greetMessage = (`Hello ${myName}!`);
+    console.log(greetMessage);
 }
 greet()
 
-
+// Optimized function
 function multiply(a, b){
-    let multiply = (a * b);
-    console.log(multiply);
+    return a * b;
 }
-multiply(5, 5);
-multiply(num1, num2);
-//600 pause to go get wifey- 630 continue
+console.log(multiply(num1, num2));
+
 
 function factorial(n){
     if (n === 0){
