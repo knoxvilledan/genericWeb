@@ -78,9 +78,21 @@ for (let i = 0; i < fruits.length; i++){
     console.log("Fruit at reverse index", reverseIndex, ":", fruits[reverseIndex]);
     
 }
-let i = 10 
+
+let i = sum
 while (i > 0){
     console.log(i--); 
 }
 /* Mostly figured this one out on my own. gonna try another way.
-gonna commit so I can compare.*/
+gonna commit so I can compare. Got it*/
+
+let Numbers = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Numbers.shift();
+Numbers.push(13);
+
+let totals = 0;
+for (let i = 0; i < Numbers.length; i++){
+    totals += Numbers[i];
+}
+console.log("This is the sum", totals);
+// Boy that was brutal.
