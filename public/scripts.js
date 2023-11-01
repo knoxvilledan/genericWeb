@@ -42,10 +42,10 @@ switch (day){
 }   
 
 function greet(){
-    let greet = (`"Hello ${myName}!"`);
-    console.log(greet);
+    let greet = (`Hello`);
+    console.log(greet, myName);
 }
-greet();
+greet()
 
 
 function multiply(a, b){
@@ -53,4 +53,16 @@ function multiply(a, b){
     console.log(multiply);
 }
 multiply(5, 5);
-//600 pause to go get wifey
+multiply(num1, num2);
+//600 pause to go get wifey- 630 continue
+
+function factorial(n){
+    if (n === 0){
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+console.log(factorial(5));
+//pause for optimizaton test
