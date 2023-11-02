@@ -83,14 +83,14 @@ fruits.push("date", "elderberry");
 fruits.shift();
 
 console.log("Cherry is now in index:", fruits.indexOf("cherry"));
-
-fruits.forEach((fruit) => console.log(fruit));
+/* AI wanted me to make this change, but I couldn't get it to print so I switched it back.
+fruits.forEach((fruits) => console.log(fruits));
 fruits
   .slice()
   .reverse()
-  .forEach((fruit) => console.log(fruit));
+  .forEach((fruits) => console.log(fruits));
+*/
 
-/* 
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
@@ -98,7 +98,7 @@ for (let i = 0; i < fruits.length; i++) {
 for (let i = fruits.length - 1; i >= 0; i--) {
   console.log(fruits[i]);
 }
-*/
+
 // 900
 let num = sum;
 while (num > 0) {
@@ -110,3 +110,4 @@ let numBers = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 let totalSum = numBers.reduce((acc, curr) => acc + curr, 0);
 console.log(totalSum);
 //0939 pause for optimization
+//1200 back at it.
