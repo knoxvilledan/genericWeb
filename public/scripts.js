@@ -63,4 +63,17 @@ function factorial(n){
 }
 
 console.log(factorial(5));
-//pause for optimizaton test
+//part 2. 400-710 (3 hours). wifey pickup -.5 = 2.5 hours
+
+let fruits = ["apple", "banana", "cherry"];
+fruits.push("date", "elderberry");
+fruits.shift();
+    
+console.log("Cherry is now in index:", fruits.indexOf("cherry"));
+
+for (let i =  0; i < fruits.length; i++){
+    console.log(fruits[i]);
+}
+for (let i = 0; i < fruits.length; i--){
+    console.log(fruits[i]);
+}
