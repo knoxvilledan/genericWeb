@@ -106,8 +106,38 @@ while (num > 0) {
   num--;
 }
 
-let numBers = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
-let totalSum = numBers.reduce((acc, curr) => acc + curr, 0);
+let mynumBers = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+let totalSum = mynumBers.reduce((acc, curr) => acc + curr, 0);
 console.log(totalSum);
 //0939 pause for optimization
 //1200 back at it.
+
+let person = {
+  firstName: myName,
+  lastName: "Nelson",
+  presentAge: `${age}`,
+  jobTitle: "Baby Web Developer",
+
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+
+  birthday: function () {
+    return Number(this.presentAge) + 1;
+  },
+};
+console.log(person.fullName());
+console.log(person.birthday());
+
+// DOM work. Chat is guiding me. This is all chatGPT.I've never experienced this, not yet but it's coming
+document.getElementById("header").textContent = "Press it real good!";
+
+var newDiv = document.createElement("div");
+newDiv.textContent = "I'm new here!";
+document.body.appendChild(newDiv);
+
+document.getElementById("clickMe").addEventListener("click", function () {
+  alert("Button was clicked!");
+});
+
+function
