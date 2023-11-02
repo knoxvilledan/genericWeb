@@ -130,7 +130,7 @@ console.log(person.fullName());
 console.log(person.birthday());
 
 // DOM work. Chat is guiding me. This is all chatGPT.I've never experienced this, not yet but it's coming
-document.getElementById("header").textContent = "Press it real good!";
+document.getElementById("header").textContent = "Old Header";
 
 var newDiv = document.createElement("div");
 newDiv.textContent = "I'm new here!";
@@ -139,5 +139,3 @@ document.body.appendChild(newDiv);
 document.getElementById("clickMe").addEventListener("click", function () {
   alert("Button was clicked!");
 });
-
-function
