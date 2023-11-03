@@ -117,3 +117,12 @@ document.body.appendChild(newDiv);
 document.getElementById("clickMe").addEventListener("click", function () {
   alert("Button was clicked!");
 });
+
+function objectToArray(obj) {
+  return Object.entries(obj);
+}
+const myObj = { a: 1, b: 2, c: 3 };
+const myResult = objectToArray(myObj);
+console.log(myResult);
+// Day 4 of the test info completed to this point.
+// Gonna use a new js sheet for day 5 on. See index.js outside of the public folder.
