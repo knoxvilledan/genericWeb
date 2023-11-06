@@ -1,3 +1,7 @@
+// *js code test for the new html doc that i'm writing.
+// Write a function to turn all strings to all caps.
+// Wanna ask Ashley how does he keep his notes?
+
 //243 am
 let myName = "Daniel";
 let num1 = 10;
@@ -55,3 +59,48 @@ function factorial(n) {
 }
 
 console.log(factorial(5));
+// 355 am starting agian
+let fruits = ["apple", "banana", "cherry"];
+fruits.push("date", "elderberry");
+fruits.shift(0);
+console.log(fruits.indexOf("cherry"));
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log();
+}
+
+for (let i = fruits.length - 1; i >= 0; i--) {
+  console.log(fruits[i]);
+}
+
+let num3 = 10;
+while (num3 >= 1) {
+  console.log(num1);
+  num3--;
+}
+
+let num4 = [1, 2, 3, 4, 5];
+let sum2 = 0;
+for (let i = 0; i < num4.length; i++) {
+  sum2 += num4[i];
+}
+console.log(sum2);
+
+let person = {
+  firstName: `${myName}`,
+  lastName: "Does It",
+  age: 47,
+  jobTitle: "Todler Web Developer",
+};
+
+person.fullName = function () {
+  return this.firstName + " " + this.lastName;
+};
+
+person.birthday = function () {
+  this.age++;
+};
+
+console.log(person.fullName());
+person.birthday();
+console.log(person.age);
