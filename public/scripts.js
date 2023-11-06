@@ -87,7 +87,7 @@ for (let i = 0; i < num4.length; i++) {
 console.log(sum2);
 
 let person = {
-  firstName: `${myName}`,
+  firstName: "Danny",
   lastName: "Does It",
   age: 47,
   jobTitle: "Todler Web Developer",
@@ -104,3 +104,13 @@ person.birthday = function () {
 console.log(person.fullName());
 person.birthday();
 console.log(person.age);
+
+document.getElementById("header").textContent = "Well, hello there!";
+
+let newDiv = document.createElement("div");
+newDiv.textextConent = "I'm new here";
+document.body.appendChild(newDiv);
+
+document.getElementById("clickMe").addEventListener("click", function () {
+  alert("Button was clicked!");
+});
