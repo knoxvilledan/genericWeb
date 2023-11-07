@@ -1,2 +1,7 @@
-
-
+.background-image {
+  background-image: url("images/R.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+}
