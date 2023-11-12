@@ -2,7 +2,7 @@
   "name": "genericweb",
   "version": "1.0.0",
   "description": "",
-  "main": "scripts.js",
+  "main": "scripts/scripts.js",
   "scripts": {
     "start": "browser-sync start --server --files",
     "test": "echo \"Error: no test specified\" && exit 1"
