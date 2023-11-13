@@ -1,7 +1,46 @@
 .background-image {
-  background-image: url("images/R.jpg");
+  background-image: url("/images/R.jpg");
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 100%;
   width: 100%;
 }
+
+body {
+  border: 2px solid gray;
+  margin: 10px;
+  padding: 10px;
+}
+
+#clickMe {
+  background-color: blue; /* Example color */
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#hoverButton {
+  background-color: blue; /* Example color */
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.column {
+  column-count: 3;
+  column-gap: 50px;
+  background-color: darkgray; /* Example color */
+  border: 10px solid black;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+

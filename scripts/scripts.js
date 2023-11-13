@@ -105,18 +105,6 @@ console.log(person.age);
 person.birthday();
 console.log(person.age);
 
-document.getElementById("header").textContent = "Hello, World";
-
-var newDiv = document.createElement("div");
-newDiv.textContent = "I'm new here!";
-document.body.appendChild(newDiv);
-
-document.getElementById("clickMe").addEventListener("click", function() {
-    alert("Button was clicked!");
-});
-
-
-
 // Obj to Array
 function objectToArray(obj) {
   return Object.entries(obj);
@@ -168,37 +156,66 @@ let newSumFail = newNumbersFail.reduce(function (acc, num) {
 }, 0);
 console.log(newSumFail);
 
-
 // Closures
 function outerFunction() {
-    let outerVariable = "I'm an outer variable";
+  let outerVariable = "I'm an outer variable";
 
-    return function innerFunction() {
-        console.log(outerVariable);
-    };
+  return function innerFunction() {
+    console.log(outerVariable);
+  };
 }
 
 // Try/Catch
 function divide(a, b) {
-    try {
-        if(a === 0) throw new Error("Cannot divide with either number being zero");
-        if(b === 0) throw new Error("Cannot divide by zero");
-        return a / b;
+  try {
+    if (a === 0) throw new Error("Cannot divide with either number being zero");
+    if (b === 0) throw new Error("Cannot divide by zero");
+    return a / b;
+  } catch (err) {
+    console.log(err.message);
+    return null;
+  }
+}
 
-   
-        } catch(err) {
-            console.log(err.message)
-            return null;
-        }
-    }
+console.log(divide(0, 10));
 
-    console.log(divide(0, 10));
+document.getElementById("header").textContent = "Hello, World";
 
+var newDiv = document.createElement("div");
+newDiv.textContent = "I'm new here!";
+document.body.appendChild(newDiv);
+
+document.getElementById("clickMe").addEventListener("click", function () {
+  this.style.backgroundColor = "purple";
+  alert("Button was clicked!");
+});
 
 var ul = document.createElement("ul");
-for(var i = 0; i < 3; i++) {
-    var li = document.createElement("li");
-    li.textContent = 'Item ${i+1}';
-    ul.appendChild(li);
+let items = ["Start Strong", "Stay Strong", "Finish Strong"];
+for (var i = 0; i < 3; i++) {
+  let li = document.createElement("li");
+  li.textContent = items[i];
+  ul.appendChild(li);
 }
 document.body.appendChild(ul);
+// Element Deletion
+ul.removeChild(ul.childNodes[1]);
+
+// Mouse Events
+document
+  .getElementById("hoverButton")
+  .addEventListener("mouseover", function () {
+    this.style.backgroundColor = "red";
+  })
+  /*
+  .addEventListener("click", function () {
+    this.style.backgroundColor = "purple";
+  }); 
+   Was trying to use this click function here to add a color change after a button 
+   was clicked. Probably gonna have to try it NEXT TOUCH */
+
+
+document.getElementById("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Form is not allowed to submit");
+});
