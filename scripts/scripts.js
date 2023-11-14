@@ -215,7 +215,12 @@ document
    was clicked. Probably gonna have to try it NEXT TOUCH */
 
 
+// Form Events
 document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
     alert("Form is not allowed to submit");
 });
+// The CSS on this form looks ugly AF, will want to change it later.
+
+
+
