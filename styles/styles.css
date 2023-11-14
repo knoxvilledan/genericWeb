@@ -1,0 +1,87 @@
+.background-image {
+  background-image: url("/images/R.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /*display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;*/
+  height: 100%;
+}
+
+#clickMe {
+  background-color: blue; /* Example color */
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#hoverButton {
+  background-color: blue; /* Example color */
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.column {
+  column-count: 3;
+  column-gap: 50px;
+  background-color: darkgray; /* Example color */
+  border: 10px solid black;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 
+form {
+ background-color: #910c0c;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ This color option and lay out is ugly AF, will come back to this when I'm focusing in on css
+ training at some other point 
+
+label {
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: yellow;
+}
+
+*/
