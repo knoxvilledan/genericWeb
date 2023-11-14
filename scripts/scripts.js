@@ -220,7 +220,8 @@ document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
     alert("Form is not allowed to submit");
 });
-// The CSS on this form looks ugly AF, will want to change it later.
+/* The CSS on this form looks ugly AF, will want to change it later. 
+I commented out the css so it's just html on "website" */
 
 
 
