@@ -222,6 +222,6 @@ document.getElementById("form").addEventListener("submit", function(e) {
 });
 /* The CSS on this form looks ugly AF, will want to change it later. 
 I commented out the css so it's just html on "website" */
-
+// merge
 
 
