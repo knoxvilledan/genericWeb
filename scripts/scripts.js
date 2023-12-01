@@ -179,6 +179,8 @@ function divide(a, b) {
 
 console.log(divide(0, 10));
 
+// My Instructions for DOM Manipulation (Add to HTML and Add in CSS)
+/*
 document.getElementById("header").textContent = "Hello, World";
 
 var newDiv = document.createElement("div");
@@ -212,10 +214,10 @@ document
     this.style.backgroundColor = "purple";
   }); 
    Was trying to use this click function here to add a color change after a button 
-   was clicked. Probably gonna have to try it NEXT TOUCH */
+   was clicked. Probably gonna have to try it NEXT TOUCH 8/
 
 
-// Form Events
+// Form Events 
 document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
     alert("Form is not allowed to submit");
@@ -224,4 +226,25 @@ document.getElementById("form").addEventListener("submit", function(e) {
 I commented out the css so it's just html on "website" */
 // merge
 
+// 11-16-2023
+// Asynchronous JS
+
+// Arrow Functions
+// Traditional function Expression
+const sum4 = function (a, b) {
+  return a + b;
+};
+// Arrow funcion
+/* const sumArrow = (a, b) => a + b;
+  return a + b;
+console.log(sumArrow)
+// (How do you console.log this?)*/
+
+// Destructuring
+const person3 = { name: "John", age: 30 };
+const { name, age } = person3;
+console.log(person3);
+
+const array = [1, 2, 3];
+const [first, second, third] = array;
 
