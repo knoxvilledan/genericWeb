@@ -1,32 +1,94 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: pink;
   margin: 0;
+  text-align: center;
+}
+
+header {
+  display: flex; /* Enables flexbox */
+  flex-wrap: wrap;
+  justify-content: space-around; /* Space between items */
+  align-items: center; /* Align items vertically */
+  background-color: lightblue; /* Example background color */
+  padding: 10px; /* Some padding */
+}
+
+header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+.dynamic-text {
+  flex: 1;
+  display: none; /* Hide by default */
+  transition: transform 1s; /* Smooth transition for the effect */
+  transform: translateX(-100%);
+  text-align: center;
+}
+
+/* Media query for larger screens */
+@media (min-width: 800px) {
+  .dynamic-text {
+    display: block; /* Show the paragraph */
+    transform: translateX(0); /* Move to the original position */
+  }
+}
+nav {
+  flex: 1;
+}
+
+nav ul {
+  list-style-type: none; /* Removes the bullets from the list */
   padding: 0;
-  /*display: flex;
-  justify-content: center;
-  align-items: center; 
-  height: 100vh;*/
-  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  display: block; /* Make the links fill the whole list item */
+  color: white; /* Text color */
+  padding: 10px; /* Add some padding */
+  text-decoration: none; /* Remove underlines */
+}
+
+/* Change the color of links on hover */
+nav ul li a:hover {
+  background-color: #ddd; /* Light grey background */
+  color: black; /* Black text */
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: center; /* Center aligned */
+  }
+
+  nav ul li {
+    margin: 5px 0; /* Adjust margin for stacked items */
+  }
 }
 
 p {
-  padding: 0%;
+  padding: 0;
   margin-left: 2rem;
 }
 
 h2 {
   padding: 1%;
 }
-#hoverButton {
-  background-color: blue; /* Example color */
-  padding: 10px 20px;
-  color: white;
-  border: 2px solid black;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
+#hoverButton,
 #clickMe {
   background-color: blue; /* Example color */
   padding: 10px 20px;
@@ -45,10 +107,20 @@ h2 {
   border-radius: 10px;
   margin: 20px;
   padding: 20px;
-  display: flex;
-  align-items: flex-start;
 }
 
+/* Adjust column layout for smaller screens */
+@media (max-width: 900px) {
+  .column {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    column-count: 1;
+  }
+}
 /* 
 form {
  background-color: #910c0c;
