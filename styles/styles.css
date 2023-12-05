@@ -3,25 +3,29 @@ body {
   background-color: pink;
   margin: 0;
   text-align: center;
+  padding-top: 100px;
 }
 
-header {
+.header {
+  position: fixed; /* Fixes the header at its position */
+  top: 0; /* Aligns the header at the top of the viewport */
+  width: 100%; /* Ensures the header spans the full width */
+  z-index: 1000; /* Ensures the header stays on top of other content */
+  /* Add other styling as needed (background, padding, etc.) */
   display: flex; /* Enables flexbox */
-  flex-wrap: wrap;
-  justify-content: space-around; /* Space between items */
+  justify-content: space-between; /* Space between items */
   align-items: center; /* Align items vertically */
   background-color: lightblue; /* Example background color */
-  padding: 10px; /* Some padding */
+  padding: 10px;
 }
 
 header h1 {
   margin: 0;
-  flex: 1;
+  flex: 3;
   text-align: left;
 }
 
 .dynamic-text {
-  flex: 1;
   display: none; /* Hide by default */
   transition: transform 1s; /* Smooth transition for the effect */
   transform: translateX(-100%);
@@ -29,7 +33,7 @@ header h1 {
 }
 
 /* Media query for larger screens */
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   .dynamic-text {
     display: block; /* Show the paragraph */
     transform: translateX(0); /* Move to the original position */
@@ -65,7 +69,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 600px) {
-  header {
+  .header {
     flex-direction: column; /* Stack items vertically */
     text-align: center;
   }
@@ -99,17 +103,43 @@ h2 {
   cursor: pointer;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .column {
+  flex: 1; /* Each column takes up equal space */
+  margin: 10px; /* Adjust as needed for spacing between columns */
+  padding: 20px; /* Padding inside each column */
+  background-color: darkgray;
+  border: 10px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Optional: Hover effect */
+.column:hover {
+  background-color: lightgray; /* Change color on hover */
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/*.column {
   column-count: 3;
   column-gap: 50px;
-  background-color: darkgray; /* Example color */
+  background-color: darkgray;
   border: 10px solid black;
   border-radius: 10px;
   margin: 20px;
   padding: 20px;
-}
+}*/
 
-/* Adjust column layout for smaller screens */
+/* Adjust column layout for smaller screens 
 @media (max-width: 900px) {
   .column {
     column-count: 2;
@@ -121,6 +151,7 @@ h2 {
     column-count: 1;
   }
 }
+*/
 /* 
 form {
  background-color: #910c0c;
