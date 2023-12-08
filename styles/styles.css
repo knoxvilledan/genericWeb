@@ -23,13 +23,15 @@ header h1 {
   margin: 0;
   flex: 3;
   text-align: left;
+  justify-content: space-between;
 }
 
 .dynamic-text {
   display: none; /* Hide by default */
   transition: transform 1s; /* Smooth transition for the effect */
   transform: translateX(-100%);
-  text-align: center;
+  text-align: left;
+  padding-right: 0px;
 }
 
 /* Media query for larger screens */
@@ -57,7 +59,7 @@ nav ul li {
 
 nav ul li a {
   display: block; /* Make the links fill the whole list item */
-  color: white; /* Text color */
+  color: faded-balck; /* Text color */
   padding: 10px; /* Add some padding */
   text-decoration: none; /* Remove underlines */
 }
@@ -81,6 +83,9 @@ nav ul li a:hover {
 
   nav ul li {
     margin: 5px 0; /* Adjust margin for stacked items */
+  }
+  body {
+    padding-top: 250px;
   }
 }
 
